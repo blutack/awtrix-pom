@@ -5,33 +5,22 @@ Standalone pomodoro timer for clocks flashed with the awesome [awtrix-light](htt
 ![awtrix(1)](https://github.com/blutack/awtrix-pom/assets/348305/b8a3f63c-9f22-4c05-bbb8-a36470a9ec56)
 ![awtrix(2)](https://github.com/blutack/awtrix-pom/assets/348305/f9764e21-51dd-4096-9699-126ce7003b9c)
 
-## Installation
+## Installation & Usage
 The recommended way to install is to build it yourself using cargo (after skimming the code to make sure it's not doing anything nefarious) but there are also Github CI build binaries if you like.
 
 ### From Binaries
 - Download a suitable build zip for your operating system from https://github.com/blutack/awtrix-pom/releases
 - Unzip it to find an awtrix-pom or awtrix-pom.exe binary
 - Open the folder in a command prompt/terminal window (Windows users, right click in the folder and select "Open command window here")
-- Run `awtrix-pom.exe http://my-clock.lan` on Windows or `./awtrix-pom http://my-clock.lan` on Linux/OSX
+- Run `awtrix-pom.exe http://my-clock.local` on Windows or `./awtrix-pom http://my-clock.local` on Linux/OSX
+- Your clock should switch to a pomodoro timer layout
 
 ### From Source Code/Cargo
 - Install Rust from https://www.rust-lang.org/tools/install if you don't already have it
 - Clone this repo with `git clone https://github.com/blutack/awtrix-pom`
 - Change directory into the cloned repository and run `cargo build --release`. Your binary will be output to the `/target/release` folder
-- You can also run awtrix-pom directly with `cargo run -- http://my-clock.lan`
-
-## Usage
-From a release binary
-
-### Linux/OSX
-`./awtrix-pom http://my-clock.local`
-
-### Windows
-`awtrix-pom.exe http://my-clock.local`
-
-If you've got cargo installed
-
-`cargo run -- http://my-clock.local`
+- You can also run awtrix-pom directly with `cargo run -- http://my-clock.local`
+- Your clock should switch to a pomodoro timer layout
 
 ## Options
 ```
