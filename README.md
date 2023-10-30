@@ -23,7 +23,11 @@ The recommended way to install is to build it yourself using cargo (after skimmi
 ## Usage
 From a release binary
 
+### Linux/OSX
 `./awtrix-pom http://my-clock.local`
+
+### Windows
+`awtrix-pom.exe http://my-clock.local`
 
 If you've got cargo installed
 
