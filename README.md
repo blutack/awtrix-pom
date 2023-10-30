@@ -48,7 +48,7 @@ Options:
   --long            minutes to rest for on long breaks [20]
   --cycles          how many short breaks before a long break [4]
   --beep            beep on transition between work and breaks [true]
-  --switch          switch to the timer app on the clock automatically [true]
+  --switch          switch to the pomodoro app on the clock automatically [true]
   -v, --verbose     print debug information
   --seconds         interpret times as seconds, not minutes - useful for demos
   --help            display usage information
