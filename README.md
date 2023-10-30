@@ -27,7 +27,7 @@ Because the logic would be very painful to implement, and I wanted something I c
 
 ## How Does It Work?
 By calling the HTTP API of your clock to create a temporary custom app ("pomodoro") and switching to it.
-It then updates the text and progress bar every minute (unless it's in seconds mode). On shutdown (ctrl-c) it wipes the temporary app.
+It then updates the text and progress bar every minute (unless it's in seconds mode, in which case it updates every... second). On shutdown (ctrl-c) it wipes the temporary app.
 
 ## Warnings & Limitations
 - Because the clock bit of the view is updated only when the pomodoro timer ticks down, the displayed time could be up to a minute behind. This is not a problem for me but if it is for you let me know and I'll fix it.
