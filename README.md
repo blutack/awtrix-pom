@@ -6,6 +6,12 @@ Standalone pomodoro timer for clocks flashed with the awesome [awtrix-light](htt
 ![awtrix(2)](https://github.com/blutack/awtrix-pom/assets/348305/f9764e21-51dd-4096-9699-126ce7003b9c)
 
 ## Usage
+From a release binary
+
+`./awtrix-pom http://my-clock.local`
+
+If you've got cargo installed
+
 `cargo run -- http://my-clock.local`
 
 ## Options
