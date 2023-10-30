@@ -77,7 +77,7 @@ fn update(config: &PomConfig, mode: &PomMode, remaining: u64, total: u64) {
         "text": text,
         "progress": remaining_percent,
         "center": false,
-        "lifetime": 5,
+        "lifetime": 90,
         "lifetimeMode": 1,
         "progressC": progress_colour,
     });
