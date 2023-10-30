@@ -22,6 +22,16 @@ The recommended way to install is to build it yourself using cargo (after skimmi
 - You can also run awtrix-pom directly with `cargo run -- http://my-clock.local`
 - Your clock should switch to a pomodoro timer layout
 
+## Why Not A HA/Node-Red/etc flow
+Because the logic would be very painful to implement, and I wanted something I could fire up quickly on my desktop/laptop. Also, it's been a little while since I've done CLI stuff in Rust.
+
+## How Does It Work?
+By calling the HTTP API of your clock to create a temporary custom app ("pomodoro") and switching to it.
+It then updates the text and progress bar every minute (unless it's in seconds mode). On shutdown (ctrl-c) it wipes the temporary app.
+
+## Warnings & Limitations
+- Because the clock bit of the view is updated only when the pomodoro timer ticks down, the displayed time could be up to a minute behind. This is not a problem for me but if it is for you let me know and I'll fix it.
+
 ## Options
 ```
 Usage: awtrix-pom <hostname> [--work <work>] [--short <short>] [--long <long>] [--cycles <cycles>] [--beep <beep>] [--switch <switch>] [-v] [--seconds]
